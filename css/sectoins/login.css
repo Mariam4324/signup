@@ -27,10 +27,59 @@
 .login_label {
   color: #333;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 0.3px;
+}
+
+.checkbox-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__forgot {
+  cursor: pointer;
+  color: #007aff;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  transition: 0.5s all;
+}
+
+.login__forgot:hover {
+  text-decoration-line: underline;
+}
+
+.login__btn {
+
+  padding: 24px 10px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  background: #007aff;
+  transition: 0.5s all;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin: 32px auto 0;
+}
+.login__btn:hover {
+  background: #53a6ff;
 }
