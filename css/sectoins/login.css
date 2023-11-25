@@ -1,16 +1,18 @@
 .login {
   height: 100vh;
   padding: 48px;
-  min-width: 456px;
+  min-width: 535px;
 }
 
 .login__logo {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .login__unicorn {
+  display: block;
   margin-left: 9px;
+  margin-top: 10px;
 }
 
 .login__title {
@@ -42,6 +44,66 @@
   align-items: center;
 }
 
+.login__input {
+  margin-top: 8px;
+  max-width: 360px;
+  width: 100%;
+  height: 48px;
+  padding: 8px 8px 8px 16px;
+  background: #f2f2f2;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.login__email {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__password {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__label {
+  margin-left: 16px;
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.3px;
+}
+
+.login__password__wrapper {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.login__look {
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 24px;
+  transition: 0.5s all;
+}
+
+.login__look:hover path {
+  fill: lightgrey;
+}
+
 .login__forgot {
   cursor: pointer;
   color: #007aff;
@@ -61,8 +123,8 @@
 }
 
 .login__btn {
-
-  padding: 24px 10px;
+  height: 40px;
+  min-width: 360px;
   padding: 10px 24px;
   border-radius: 6px;
   background: #007aff;
@@ -79,7 +141,76 @@
   letter-spacing: 0.3px;
   text-align: center;
   margin: 32px auto 0;
+  border: none;
 }
 .login__btn:hover {
   background: #53a6ff;
+}
+
+.login__line {
+  background: #e5e5e5;
+  margin: 32px auto 0;
+  height: 0.5px;
+}
+
+.login__btn_black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  cursor: pointer;
+  height: 40px;
+  min-width: 360px;
+  border-radius: 6px;
+  background: #333;
+  margin: 32px auto 0;
+  transition: 0.5s all;
+  border: none;
+}
+
+.login__btn__text {
+  margin-left: 8px;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+.login__btn_black:hover {
+  background: #4e4d4d;
+}
+
+.login__question {
+  color: #1a1a1a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+.login__signup {
+  margin-left: 8px;
+  color: #007aff;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+  letter-spacing: 0.3px;
+}
+
+.login__row {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
 }

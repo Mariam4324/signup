@@ -9,22 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
 </head>
 
 <body>
 
-  <main class="main-flex">
+  <main class="main">
     <section class="left">
       <div class="left__author">Photo by
         <a class="left__link" href="https://unsplash.com/@irrabagon">Alexandr Popadin</a>
       </div>
     </section>
-    
+
     <section class="login">
+
       <div class="container">
         <div class="login__logo">
-          <img class="login__icon" src="./icons/login_icon@1x.webp"
-            srcset="./icons/login_icon@1x.webp 1x, ./icons/login_icon@2x.webp 2x" alt="icon">
+          <img class="login__icon" src="./icons/login_icon.svg" alt="icon">
           <svg class="login__unicorn" xmlns="http://www.w3.org/2000/svg" width="93" height="15" viewBox="0 0 93 15"
             fill="none">
             <path
@@ -57,50 +58,50 @@
         <div class="login__title">Nice to see you again</div>
         <div class="login__email">
           <label class="login__label" for="login">Login</label>
-          <input class="login__input" id="login" type="text" placeholder="Email or phone number">
+          <input class="login__input" id="login" type="text" placeholder="Email or phone number" re>
         </div>
         <div class="login__password">
           <label class="login__label" for="login">Password</label>
-          <input class="login__input" id="login" type="password" placeholder="Enter password">
-          <div class="login__eye">
+          <div class="login__password__wrapper">
+            <input class="login__input" id="login" type="password" placeholder="Enter password">
+
             <svg class="login__look" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-              fill="none">
-              <path class="login__look"
-                d="M8 2.66663C4.36364 2.66663 1.25818 4.92844 0 8.12117C1.25818 11.3139 4.36364 13.5757 8 13.5757C11.6364 13.5757 14.7418 11.3139 16 8.12117C14.7418 4.92844 11.6364 2.66663 8 2.66663ZM8 11.7575C5.99273 11.7575 4.36364 10.1284 4.36364 8.12117C4.36364 6.1139 5.99273 4.48481 8 4.48481C10.0073 4.48481 11.6364 6.1139 11.6364 8.12117C11.6364 10.1284 10.0073 11.7575 8 11.7575ZM8 5.93935C6.79273 5.93935 5.81818 6.9139 5.81818 8.12117C5.81818 9.32844 6.79273 10.303 8 10.303C9.20727 10.303 10.1818 9.32844 10.1818 8.12117C10.1818 6.9139 9.20727 5.93935 8 5.93935Z"
-                fill="#4D4D4D" />
-            </svg>
+            fill="none">
+            <path class="login__look"
+              d="M8 2.66663C4.36364 2.66663 1.25818 4.92844 0 8.12117C1.25818 11.3139 4.36364 13.5757 8 13.5757C11.6364 13.5757 14.7418 11.3139 16 8.12117C14.7418 4.92844 11.6364 2.66663 8 2.66663ZM8 11.7575C5.99273 11.7575 4.36364 10.1284 4.36364 8.12117C4.36364 6.1139 5.99273 4.48481 8 4.48481C10.0073 4.48481 11.6364 6.1139 11.6364 8.12117C11.6364 10.1284 10.0073 11.7575 8 11.7575ZM8 5.93935C6.79273 5.93935 5.81818 6.9139 5.81818 8.12117C5.81818 9.32844 6.79273 10.303 8 10.303C9.20727 10.303 10.1818 9.32844 10.1818 8.12117C10.1818 6.9139 9.20727 5.93935 8 5.93935Z"
+              fill="#4D4D4D" />
+          </svg>
           </div>
+
+          
         </div>
 
         <div class="checkbox-wrapper">
           <div class="checkbox">
             <input class="checkbox__input" type="checkbox" id="check">
-            <svg class="checkbox__svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <g filter="url(#filter0_d_61457_139)">
-                <rect x="2" y="2" width="16" height="16" rx="8" fill="white" />
-              </g>
-              <defs>
-                <filter id="filter0_d_61457_139" x="2" y="2" width="18" height="18" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_61457_139" />
-                  <feOffset dx="1" dy="1" />
-                  <feGaussianBlur stdDeviation="1" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 0.3 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_61457_139" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_61457_139" result="shape" />
-                </filter>
-              </defs>
-            </svg>
+            
             <label class="checkbox__label" for="check">Remember me</label>
           </div>
-
           <div class="login__forgot">Forgot password?</div>
         </div>
+        <button class="login__btn">Sign in</button>
+        <div class="login__line"></div>
+        <button class="login__btn_black">
+          <img class="login__google" src="./icons/google_icon.svg" alt="google icon">
+          <span class="login__btn__text">Or sign in with Google</span>
+        </button>
 
-        <div class="login__btn">Sign in</div>
+        <div class="login__row">
+          <div class="login__question">Dont have an account?</div>
+          <div class="login__signup">Sign up now</div>
+        </div>
+
+      </div>
+
+      
+
+
+
 
     </section>
   </main>
